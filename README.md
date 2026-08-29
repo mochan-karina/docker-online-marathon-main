@@ -1,64 +1,32 @@
-# Django_View-Templates
+Copy a project from one of these DJANGO FORMS or DJANGO VIEW/TEMPLATES sprints
 
-## install requirement project's packages
+Create a test using Selenium.
+The test case involves verifying the input of correct and incorrect credentials during the login process.
 
-```commandline
-pip install -r requirements.txt
-```
+### Pre-requisites:
 
-## Run project
+* Access to the website
+* Valid user account
+### Steps:
 
-Go to the folder with manage.py file, run library
-```commandline
-python manage.py migrate 
-```
+1. Open a web browser and navigate to the homepage of the website.
+2. Click on the "Login" button in the top right corner of the page.
+3. Enter valid login credentials:
+   * Username: valid username
+   * Password: valid password
+4. Click the "Login" button.
+5. Verify that the user is successfully logged in to the website.
+6. Click on the "Logout" button in the top right corner of the page.
+7. Verify that the user has successfully logged out of the account.
+8. Enter invalid login credentials:
+9. Username: incorrect username
+10. Password: incorrect password
+11. Click the "Login" button.
+12. Verify that the user is not able to log in to the website and receives an appropriate error message.
 
-```commandline
-python manage.py runserver
-```
+## Expected Result:
 
-## Run tests
-
-There are no tests.
-
-Everything is at your discretion and the feeling of beauty :)
-
-**_As a result of this sprint ( except fot the code in  repository) you should have a short video (2-10min) that shows functionality of the app._**
-
-## Tasks
-
-Create the appropriate views and templates for:
-
-**Do not use django forms, use only HTML forms!**
-
-(if necessary, you can modify the models)
-
-auth
-* Provide the ability to register the user as a librarian or as an ordinary user (guest)
-* Provide the ability to log in (guest)
-* Provide the ability to Log out (authorized user)
-
-books  (admin/user)
-
-* show information about all books (admin/user)
-* provide an opportunity to view a specific book (admin/user);
-* provide the ability to filter books by various criteria (author, title, etc.) (admin/user);
-* show all books provided to a specific user (by id) (admin);
-
-users  (admin)
-
-* show information about all users (admin/user)
-* provide an opportunity to view a specific user (admin/user)
-
-orders  (admin)
-
-* show information about all orders (admin)
-* show information about all my orders (user)
-* provide an opportunity to create an order (user)
-* provide an opportunity to close the order  (admin)
-
-authors  (admin)
-
-* show information about all authors (admin)
-* provide an opportunity to create a new author  (admin)
-* provide the ability to remove the author if he is not attached to any book (admin)
+* The user should be able to successfully log in to the website when valid credentials are entered.
+* The user should be able to successfully log out of the account when clicking the "Logout" button.
+* The user should not be able to log in to the website when invalid credentials are entered and should receive an appropriate error message.
+### AND RECORD SHORT VIDEO (2-10MIN) THAT SHOWS FUNCTIONALITY IN ACTION
