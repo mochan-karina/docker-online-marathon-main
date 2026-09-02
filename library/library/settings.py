@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': 'postgres123',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
@@ -157,7 +157,3 @@ LOGGING = {
         },
     },
 }
-try:
-    from .settings import *
-except ImportError:
-    pass
